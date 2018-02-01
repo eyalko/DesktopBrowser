@@ -7,6 +7,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -25,7 +26,7 @@ public class seleniumTest {
 
 	@Parameters({"browser"})
 	@BeforeMethod
-	public void setUp(String browser) {
+	public void setUp(@Optional("chrome") String browser) {
 		try {
 			url = new URL("https://sales.experitest.com/wd/hub");
 		} catch (MalformedURLException e) {
