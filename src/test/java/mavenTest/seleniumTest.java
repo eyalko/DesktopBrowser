@@ -7,7 +7,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -15,7 +14,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 
-public class seleniumTest implements Runnable {
+public class seleniumTest {
 	private static final long TIMEOUT = 2000;
 	private final String accessKey = "eyJ4cC51Ijo4OCwieHAucCI6MiwieHAubSI6Ik1BIiwiYWxnIjoiSFMyNTYifQ.eyJleHAiOjE4MzIyNDI0MjksImlzcyI6ImNvbS5leHBlcml0ZXN0In0.aVweCqFrmE6UX84F10fBpWPwah66F8Y04DVOk-fhQGE";
 	private boolean SECURE = false;
@@ -23,16 +22,10 @@ public class seleniumTest implements Runnable {
 	protected URL url;
 	protected WebDriver driver;
 	protected DesiredCapabilities dc = new DesiredCapabilities();
-	public String browser;
 
-	public seleniumTest(String browser) {
-		// TODO Auto-generated constructor stub
-		this.browser = browser;
-	}
-	
 	@Parameters({"browser"})
 	@BeforeMethod
-	public void setUp(@Optional("chrome") String browser) {
+	public void setUp(String browser) {
 		try {
 			url = new URL("https://sales.experitest.com/wd/hub");
 		} catch (MalformedURLException e) {
@@ -83,13 +76,6 @@ public class seleniumTest implements Runnable {
 	@AfterMethod
 	public void tearDown(){
 		driver.quit();
-	}
-
-	public void run() {
-		// TODO Auto-generated method stub
-		setUp(browser);
-		test();
-		tearDown();
 	}
 
 
