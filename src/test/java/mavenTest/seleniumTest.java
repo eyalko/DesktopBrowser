@@ -26,7 +26,7 @@ public class seleniumTest {
 
 	@Parameters({"browser"})
 	@BeforeMethod
-	public void setUp(@Optional("@os='android'") String browser) {
+	public void setUp(@Optional("chrome") String browser) {
 		try {
 			url = new URL("https://sales.experitest.com/wd/hub");
 		} catch (MalformedURLException e) {
