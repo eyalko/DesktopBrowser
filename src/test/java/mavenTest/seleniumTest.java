@@ -15,7 +15,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 
-public class seleniumTest {
+public class seleniumTest implements Runnable {
 	private static final long TIMEOUT = 2000;
 	private final String accessKey = "eyJ4cC51Ijo4OCwieHAucCI6MiwieHAubSI6Ik1BIiwiYWxnIjoiSFMyNTYifQ.eyJleHAiOjE4MzIyNDI0MjksImlzcyI6ImNvbS5leHBlcml0ZXN0In0.aVweCqFrmE6UX84F10fBpWPwah66F8Y04DVOk-fhQGE";
 	private boolean SECURE = false;
@@ -23,7 +23,13 @@ public class seleniumTest {
 	protected URL url;
 	protected WebDriver driver;
 	protected DesiredCapabilities dc = new DesiredCapabilities();
+	public String browser;
 
+	public seleniumTest(String browser) {
+		// TODO Auto-generated constructor stub
+		this.browser = browser;
+	}
+	
 	@Parameters({"browser"})
 	@BeforeMethod
 	public void setUp(@Optional("chrome") String browser) {
@@ -77,6 +83,13 @@ public class seleniumTest {
 	@AfterMethod
 	public void tearDown(){
 		driver.quit();
+	}
+
+	public void run() {
+		// TODO Auto-generated method stub
+		setUp(browser);
+		test();
+		tearDown();
 	}
 
 
