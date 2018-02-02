@@ -48,7 +48,7 @@ public class seleniumTest {
 		
 	}
 
-	@Test(invocationCount = 3)
+	@Test(invocationCount = 4)
 	public void test() {
 		
 		driver.get("https://www.walla.co.il/");
