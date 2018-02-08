@@ -1,5 +1,6 @@
 package mavenTest;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.CapabilityType;
@@ -48,10 +49,22 @@ public class seleniumTest {
 		
 	}
 
-	@Test(invocationCount = 4)
+	@Test
 	public void test() {
 		
-		driver.get("https://www.walla.co.il/");
+		driver.get("https://sales.experitest.com/");
+		driver.findElement(By.xpath("//*[@name='username']")).sendKeys("eyal.kopelevich");
+	    driver.findElement(By.xpath("//*[@name='password']")).sendKeys("Experitest2012");
+	    driver.findElement(By.xpath("//*[@name='login']")).click();
+	    driver.findElement(By.xpath("//*[@href='#/launchpad']")).click();
+	    driver.findElement(By.xpath("//*[@id=\"side-menu\"]/li[4]")).click();
+	    int i = 0;
+	    while (i < 3) {
+	        driver.findElement(By.xpath("//*[@class='icon icon-smartphone']")).click();
+	        driver.findElement(By.xpath("//*[@id=\"side-menu\"]/li[4]")).click();
+	        i++;
+	    }
+
 		
 		try {
 			Thread.sleep(10000);

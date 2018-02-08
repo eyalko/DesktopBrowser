@@ -19,4 +19,10 @@
       <class name="mavenTest.seleniumTest"/>
     </classes>
   </test> <!-- Test -->
+  <test name="TestIOS4">
+  	<parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="mavenTest.seleniumTest"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->
