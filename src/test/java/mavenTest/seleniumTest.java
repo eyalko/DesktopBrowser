@@ -56,18 +56,18 @@ public class seleniumTest {
 		driver.findElement(By.xpath("//*[@name='username']")).sendKeys("eyal.kopelevich");
 	    driver.findElement(By.xpath("//*[@name='password']")).sendKeys("Experitest2012");
 	    driver.findElement(By.xpath("//*[@name='login']")).click();
-	    driver.findElement(By.xpath("//*[@href='#/launchpad']")).click();
-	    driver.findElement(By.xpath("//*[@id=\"side-menu\"]/li[4]")).click();
-	    int i = 0;
-	    while (i < 3) {
-	        driver.findElement(By.xpath("//*[@class='icon icon-smartphone']")).click();
-	        driver.findElement(By.xpath("//*[@id=\"side-menu\"]/li[4]")).click();
-	        i++;
-	    }
+//	    driver.findElement(By.xpath("//*[@href='#/launchpad']")).click();
+//	    driver.findElement(By.xpath("//*[@id=\"side-menu\"]/li[4]")).click();
+//	    int i = 0;
+//	    while (i < 3) {
+//	        driver.findElement(By.xpath("//*[@class='icon icon-smartphone']")).click();
+//	        driver.findElement(By.xpath("//*[@id=\"side-menu\"]/li[4]")).click();
+//	        i++;
+//	    }
 
 		
 		try {
-			Thread.sleep(10000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
