@@ -1,14 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <parameter name="browser" value="ie"/>
-  <test name="TestIOS3(failed)" parallel="tests">
-    <parameter name="browser" value="ie"/>
+  <parameter name="browser" value="chrome"/>
+  <test name="TestIOS4(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="mavenTest.seleniumTest">
         <methods>
           <include name="tearDown"/>
           <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- mavenTest.seleniumTest -->
+    </classes>
+  </test> <!-- TestIOS4(failed) -->
+  <test name="TestIOS(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="mavenTest.seleniumTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- mavenTest.seleniumTest -->
+    </classes>
+  </test> <!-- TestIOS(failed) -->
+  <test name="TestIOS3(failed)" parallel="tests">
+    <parameter name="browser" value="internet explorer"/>
+    <classes>
+      <class name="mavenTest.seleniumTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
           <include name="setUp"/>
           <include name="setUp"/>
           <include name="setUp"/>
