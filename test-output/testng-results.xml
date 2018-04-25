@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="4" failed="0" total="4" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="1677" started-at="2018-04-02T13:51:07Z" finished-at="2018-04-02T13:51:08Z">
+  <suite name="Default suite" duration-ms="55124" started-at="2018-04-25T07:52:08Z" finished-at="2018-04-25T07:53:04Z">
     <groups>
     </groups>
-    <test name="TestChrome" duration-ms="1674" started-at="2018-04-02T13:51:07Z" finished-at="2018-04-02T13:51:08Z">
+    <test name="Default test" duration-ms="55124" started-at="2018-04-25T07:52:08Z" finished-at="2018-04-25T07:53:04Z">
       <class name="mavenTest.seleniumTest">
-        <test-method status="FAIL" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.seleniumTest@73846619]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-02T16:51:07Z" finished-at="2018-04-02T16:51:07Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.seleniumTest@4b952a2d]" name="setUp" is-config="true" duration-ms="4797" started-at="2018-04-25T10:52:08Z" finished-at="2018-04-25T10:52:13Z">
           <params>
             <param index="0">
               <value>
@@ -15,287 +15,18 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Bad credentials (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 744 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'EYALKOPEL-LT', ip: '192.168.2.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Bad credentials (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 744 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'EYALKOPEL-LT', ip: '192.168.2.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)
-	at mavenTest.seleniumTest.setUp(seleniumTest.java:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="test()[pri:0, instance:mavenTest.seleniumTest@73846619]" name="test" duration-ms="6" started-at="2018-04-02T16:51:08Z" finished-at="2018-04-02T16:51:08Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:mavenTest.seleniumTest@4b952a2d]" name="test" duration-ms="50294" started-at="2018-04-25T10:52:13Z" finished-at="2018-04-25T10:53:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:mavenTest.seleniumTest@73846619]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-02T16:51:08Z" finished-at="2018-04-02T16:51:08Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.seleniumTest@4b952a2d]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-04-25T10:53:04Z" finished-at="2018-04-25T10:53:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- mavenTest.seleniumTest -->
-    </test> <!-- TestChrome -->
-    <test name="TestChrome2" duration-ms="1666" started-at="2018-04-02T13:51:07Z" finished-at="2018-04-02T13:51:08Z">
-      <class name="mavenTest.seleniumTest">
-        <test-method status="FAIL" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.seleniumTest@3327bd23]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-02T16:51:07Z" finished-at="2018-04-02T16:51:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Bad credentials (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 744 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'EYALKOPEL-LT', ip: '192.168.2.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Bad credentials (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 744 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'EYALKOPEL-LT', ip: '192.168.2.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)
-	at mavenTest.seleniumTest.setUp(seleniumTest.java:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="test()[pri:0, instance:mavenTest.seleniumTest@3327bd23]" name="test" duration-ms="7" started-at="2018-04-02T16:51:08Z" finished-at="2018-04-02T16:51:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:mavenTest.seleniumTest@3327bd23]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-02T16:51:08Z" finished-at="2018-04-02T16:51:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- mavenTest.seleniumTest -->
-    </test> <!-- TestChrome2 -->
-    <test name="TestExplorer" duration-ms="1677" started-at="2018-04-02T13:51:07Z" finished-at="2018-04-02T13:51:08Z">
-      <class name="mavenTest.seleniumTest">
-        <test-method status="FAIL" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.seleniumTest@3632be31]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-02T16:51:07Z" finished-at="2018-04-02T16:51:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[internet explorer]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Bad credentials (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 741 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'EYALKOPEL-LT', ip: '192.168.2.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Bad credentials (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 741 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'EYALKOPEL-LT', ip: '192.168.2.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)
-	at mavenTest.seleniumTest.setUp(seleniumTest.java:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="test()[pri:0, instance:mavenTest.seleniumTest@3632be31]" name="test" duration-ms="2" started-at="2018-04-02T16:51:08Z" finished-at="2018-04-02T16:51:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:mavenTest.seleniumTest@3632be31]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-02T16:51:08Z" finished-at="2018-04-02T16:51:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- mavenTest.seleniumTest -->
-    </test> <!-- TestExplorer -->
-    <test name="TestFireFox" duration-ms="1671" started-at="2018-04-02T13:51:07Z" finished-at="2018-04-02T13:51:08Z">
-      <class name="mavenTest.seleniumTest">
-        <test-method status="FAIL" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.seleniumTest@4fe3c938]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-02T16:51:07Z" finished-at="2018-04-02T16:51:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Bad credentials (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 744 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'EYALKOPEL-LT', ip: '192.168.2.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Bad credentials (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 744 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'EYALKOPEL-LT', ip: '192.168.2.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)
-	at mavenTest.seleniumTest.setUp(seleniumTest.java:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="test()[pri:0, instance:mavenTest.seleniumTest@4fe3c938]" name="test" duration-ms="3" started-at="2018-04-02T16:51:08Z" finished-at="2018-04-02T16:51:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:mavenTest.seleniumTest@4fe3c938]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-02T16:51:08Z" finished-at="2018-04-02T16:51:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- mavenTest.seleniumTest -->
-    </test> <!-- TestFireFox -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

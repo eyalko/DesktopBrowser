@@ -1,61 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <parameter name="browser" value="internet explorer"/>
-  <test name="TestChrome(failed)" parallel="tests">
-    <parameter name="browser" value="chrome"/>
+  <parameter name="browser" value="ios"/>
+  <test name="TestAndroid(failed)" parallel="tests">
+    <parameter name="browser" value="android"/>
     <classes>
       <class name="mavenTest.seleniumTest">
         <methods>
-          <include name="setUp"/>
-          <include name="setUp"/>
-          <include name="setUp"/>
-          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
           <include name="test"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- mavenTest.seleniumTest -->
     </classes>
-  </test> <!-- TestChrome(failed) -->
-  <test name="TestChrome2(failed)" parallel="tests">
-    <parameter name="browser" value="chrome"/>
+  </test> <!-- TestAndroid(failed) -->
+  <test name="TestIOS(failed)" parallel="tests">
+    <parameter name="browser" value="ios"/>
     <classes>
       <class name="mavenTest.seleniumTest">
         <methods>
-          <include name="setUp"/>
-          <include name="setUp"/>
-          <include name="setUp"/>
-          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
           <include name="test"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- mavenTest.seleniumTest -->
     </classes>
-  </test> <!-- TestChrome2(failed) -->
-  <test name="TestExplorer(failed)" parallel="tests">
-    <parameter name="browser" value="internet explorer"/>
-    <classes>
-      <class name="mavenTest.seleniumTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="setUp"/>
-          <include name="setUp"/>
-          <include name="setUp"/>
-          <include name="test"/>
-        </methods>
-      </class> <!-- mavenTest.seleniumTest -->
-    </classes>
-  </test> <!-- TestExplorer(failed) -->
-  <test name="TestFireFox(failed)" parallel="tests">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="mavenTest.seleniumTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="setUp"/>
-          <include name="setUp"/>
-          <include name="setUp"/>
-          <include name="test"/>
-        </methods>
-      </class> <!-- mavenTest.seleniumTest -->
-    </classes>
-  </test> <!-- TestFireFox(failed) -->
+  </test> <!-- TestIOS(failed) -->
 </suite> <!-- Failed suite [Suite] -->

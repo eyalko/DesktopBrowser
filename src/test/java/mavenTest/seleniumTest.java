@@ -14,18 +14,28 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.experitest.manager.api.ManagerFileType;
+import com.experitest.manager.api.ManagerPublisher;
+
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
+
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.logging.Level;
 
 
 public class seleniumTest {
 	private static final long TIMEOUT = 2000;
 	private final String accessKey = "eyJ4cC51Ijo4OCwieHAucCI6MiwieHAubSI6Ik1BIiwiYWxnIjoiSFMyNTYifQ.eyJleHAiOjE4MzcwNjY4NTMsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.KSvwS-72DOrM9DTUfaJskQZzdA2zREAqW7lYk1J4lO0";
+	private final String userAccessKey = "eyJ4cC51Ijo5OCwieHAucCI6MiwieHAubSI6Ik1UVXlORFkwTWpBMk9EUTRNZyIsImFsZyI6IkhTMjU2In0.eyJleHAiOjE4NDAwMDI3MDcsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.KMhmDXcY3TqN-F6SvJf677ZWfLqHTkUNXenDSxGo3VA";
 	private boolean SECURE = false;
 
 	protected URL url;
 	protected WebDriver driver;
 	protected DesiredCapabilities dc = new DesiredCapabilities();
+	private ManagerPublisher managerPublisher = null;
 
 	@Parameters({"browser"})
 	@BeforeMethod
@@ -39,11 +49,27 @@ public class seleniumTest {
 //		dc.setCapability(CapabilityType.PLATFORM, Platform.WIN10);
 		dc.setCapability("testName", browser+" Test");
 		dc.setCapability("generateReport", true);
+		dc.setCapability("Selenium", "parallerProject");
 		dc.setCapability(CapabilityType.TAKES_SCREENSHOT, true);
-//		dc.setCapability(CapabilityType.BROWSER_NAME, BrowserType.FIREFOX);
-		dc.setCapability(CapabilityType.BROWSER_NAME, browser);
-//		dc.setCapability(CapabilityType.BROWSER_VERSION, "56.0.1");
-		driver = new RemoteWebDriver(url, dc);
+
+		
+		if (browser.equals("android")) {
+			driver = new AndroidDriver<WebElement>(url,dc);
+			System.out.println(browser);
+		} else if (browser.equals("ios")) {
+			driver = new IOSDriver<WebElement>(url,dc);
+			System.out.println(browser);
+		} else {
+			dc.setCapability(CapabilityType.BROWSER_NAME, browser);
+//			dc.setCapability(CapabilityType.BROWSER_NAME, BrowserType.FIREFOX);
+//			dc.setCapability(CapabilityType.BROWSER_VERSION, "56.0.1");
+			driver = new RemoteWebDriver(url, dc);
+			System.out.println(browser);
+			managerPublisher.addFile(new File("C:\\Users\\eyal.kopelevich\\Downloads\\test.txt"), ManagerFileType.text);
+		}
+		
+		
+//		((RemoteWebDriver) driver).setLogLevel(Level.INFO);
 		
 		
 	}
@@ -53,28 +79,32 @@ public class seleniumTest {
 		
 		driver.get("https://www.google.com");
         Thread.sleep(8000);
-        WebElement searchBar = driver.findElement(By.id("lst-ib"));
+        WebElement searchBar = driver.findElement(By.xpath("//*[@name='q']"));
         searchBar.click();
         Thread.sleep(5000);
         searchBar.sendKeys("Jerusalem wiki");
-        searchBar.sendKeys(Keys.RETURN);
+        searchBar.submit();//sendKeys(Keys.ENTER);
 //        driver.findElement(By.xpath("//*[@id=\"hplogo\"]")).click();
         Thread.sleep(5000);
+        
+        
+        
         driver.findElement(By.xpath("//*[@href=\"https://en.wikipedia.org/wiki/Jerusalem\"]")).click();
         Thread.sleep(5000);
-
         driver.findElement(By.xpath("//*[contains(text(), 'History of Jerusalem')]")).click();
         Thread.sleep(5000);
         driver.getCurrentUrl();
         driver.getTitle();
-		
-		
 		try {
 			Thread.sleep(10000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		
+		
+		
 //	    driver.findElement(By.xpath("//*[@name='username']")).sendKeys("eyal.kopelevich");
 //	    driver.findElement(By.xpath("//*[@name='password']")).sendKeys("Experitest2012");
 //	    driver.findElement(By.xpath("//*[@name='login']")).click();
