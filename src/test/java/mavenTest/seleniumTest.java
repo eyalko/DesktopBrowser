@@ -30,18 +30,18 @@ public class seleniumTest {
 	private static final long TIMEOUT = 2000;
 	private final String accessKey = "eyJ4cC51Ijo4OCwieHAucCI6MiwieHAubSI6Ik1BIiwiYWxnIjoiSFMyNTYifQ.eyJleHAiOjE4MzcwNjY4NTMsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.KSvwS-72DOrM9DTUfaJskQZzdA2zREAqW7lYk1J4lO0";
 	private final String userAccessKey = "eyJ4cC51Ijo5OCwieHAucCI6MiwieHAubSI6Ik1UVXlORFkwTWpBMk9EUTRNZyIsImFsZyI6IkhTMjU2In0.eyJleHAiOjE4NDAwMDI3MDcsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.KMhmDXcY3TqN-F6SvJf677ZWfLqHTkUNXenDSxGo3VA";
-	private boolean SECURE = false;
-
+	private final String LocalAccessKey = "eyJ4cC51IjoxLCJ4cC5wIjoyLCJ4cC5tIjoiTVRVeE9UZzVNemc0TWpjeE1RIiwiYWxnIjoiSFMyNTYifQ.eyJleHAiOjE4MzUyNTM4ODIsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.sC3uPwsAYjwbYkLyRkLYvUffnm3cCaFmIMkuuiI5T_U";
+	
 	protected URL url;
 	protected WebDriver driver;
 	protected DesiredCapabilities dc = new DesiredCapabilities();
-	private ManagerPublisher managerPublisher = null;
 
 	@Parameters({"browser"})
 	@BeforeMethod
 	public void setUp(@Optional("chrome") String browser) {
 		try {
 			url = new URL("https://:"+accessKey+ "@sales.experitest.com/wd/hub");
+//			url = new URL("http://:"+LocalAccessKey+ "@localhost:9192/wd/hub");
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -50,6 +50,7 @@ public class seleniumTest {
 		dc.setCapability("testName", browser+" Test");
 		dc.setCapability("generateReport", true);
 		dc.setCapability("Selenium", "parallerProject");
+//		dc.setCapability(new File("C:\\Users\\eyal.kopelevich\\Downloads\\test.txt"), ManagerFileType.text);
 		dc.setCapability(CapabilityType.TAKES_SCREENSHOT, true);
 
 		
@@ -62,10 +63,10 @@ public class seleniumTest {
 		} else {
 			dc.setCapability(CapabilityType.BROWSER_NAME, browser);
 //			dc.setCapability(CapabilityType.BROWSER_NAME, BrowserType.FIREFOX);
-//			dc.setCapability(CapabilityType.BROWSER_VERSION, "56.0.1");
+//			dc.setCapability(CapabilityType.VERSION, "56.0.1");
 			driver = new RemoteWebDriver(url, dc);
 			System.out.println(browser);
-			managerPublisher.addFile(new File("C:\\Users\\eyal.kopelevich\\Downloads\\test.txt"), ManagerFileType.text);
+
 		}
 		
 		

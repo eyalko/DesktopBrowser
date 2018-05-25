@@ -24,17 +24,17 @@
     <classes>
       <class name="mavenTest.seleniumTest"/>
     </classes>
-  </test> <!-- Test -->
-    <test name="TestAndroid">
+   </test>
+<!--    <test name="TestAndroid">
   	<parameter name="browser" value="android"/>
     <classes>
       <class name="mavenTest.seleniumTest"/>
     </classes>
-  </test> <!-- Test -->
+  </test> 
     <test name="TestIOS">
   	<parameter name="browser" value="ios"/>
     <classes>
       <class name="mavenTest.seleniumTest"/>
     </classes>
-  </test> <!-- Test -->
+  </test> -->
 </suite> <!-- Suite -->

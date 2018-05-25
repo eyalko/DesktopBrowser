@@ -2,6 +2,28 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
   <parameter name="browser" value="ios"/>
+  <test name="TestExplorer(failed)" parallel="tests">
+    <parameter name="browser" value="internet explorer"/>
+    <classes>
+      <class name="mavenTest.seleniumTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="test"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- mavenTest.seleniumTest -->
+    </classes>
+  </test> <!-- TestExplorer(failed) -->
   <test name="TestAndroid(failed)" parallel="tests">
     <parameter name="browser" value="android"/>
     <classes>
