@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 25 09:34:26 IDT 2018</td>
+<td>Started on:</td><td>Thu Jun 07 10:36:17 IDT 2018</td>
 </tr>
-<tr><td>Total time:</td><td>104 seconds (104618 ms)</td>
+<tr><td>Total time:</td><td>52 seconds (52458 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,18 +75,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='mavenTest.seleniumTest.test()'><b>test</b><br>Test class: mavenTest.seleniumTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element (An element could not be located on the page using the given search parameters (XPATH=&apos;//*[@href=&quot;https://en.wikipedia.org/wiki/Jerusalem&quot;]&apos;))  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.77 seconds
+<td title='mavenTest.seleniumTest.test()'><b>test</b><br>Test class: mavenTest.seleniumTest<br>Parameters: ios</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element (An element could not be located on the page using the given search parameters (XPATH=&apos;//*[@name=&apos;q&apos;]&apos;))  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.26 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
 System info: host: &apos;EYALKOPEL-LT&apos;, ip: &apos;192.168.2.125&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
 Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities [{device.majorVersion=11.0.x, dontGoHomeOnQuit=false, device.os=iOS, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={generateReport=true, takesScreenshot=true, Selenium=parallerProject, platformName=iOS, testName=ios Test}, device.serialNumber=cdaf7a8d7975b9534f335cb27e4839be7672ff39, locationServicesAuthorized=false, device.version=11.1.2, automationName=XCUITest, takesScreenshot=true, reportDirectory=reports, Selenium=parallerProject, autoWebview=false, platformName=iOS, testName=ios Test, device.screenSize=1125x2436, useKeystore=false, cloudViewLink=http://sales.experitest.com/agent-9/#/j0zbW8JO9akB4oEE?1
-Picked up Grid Node (seetest_7870)
-Reserved Device : iPhone X B0164, generateReport=true, device.manufacture=Apple, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, reportUrl=https://sales-reporter.experitest.com/#/test/8925/project/Default/, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=iPhone X, device.name=iPhone X B0164, autoGrantPermissions=false, projectName=, gridNodePort=7870, autoAcceptAlerts=false}]
-Session ID: CLOUD-SID:2018-05-25_09-34-21-b180bdbc-745a-47eb-95e7-d2679a52fdd5
-*** Element info: {Using=xpath, value=//*[@href=&quot;https://en.wikipedia.org/wiki/Jerusalem&quot;]}
+Capabilities [{device.majorVersion=10.0.x, dontGoHomeOnQuit=false, device.os=iOS, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={generateReport=true, takesScreenshot=true, Selenium=parallerProject, platformName=iOS, testName=ios Test}, device.serialNumber=569801f701a84ceedc3d0458297cea7dc353680a, locationServicesAuthorized=false, device.version=10.3.3, automationName=XCUITest, takesScreenshot=true, reportDirectory=reports, Selenium=parallerProject, autoWebview=false, platformName=iOS, testName=ios Test, device.screenSize=750x1334, useKeystore=false, cloudViewLink=http://sales.experitest.com/agent-9/#/2PcOjvjaNIPw1M4e?1
+Picked up Grid Node (seetest_7858)
+Reserved Device : iPhone 6 B0035, generateReport=true, device.manufacture=Apple, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, reportUrl=https://sales-reporter.experitest.com/#/test/9612/project/Default/, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=iPhone 6, device.name=iPhone 6 B0035, autoGrantPermissions=false, projectName=, gridNodePort=7858, autoAcceptAlerts=false}]
+Session ID: CLOUD-SID:2018-06-07_10-36-14-7474cd6e-d44f-4923-bf5f-bd9814f85e61
+*** Element info: {Using=xpath, value=//*[@name=&apos;q&apos;]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
@@ -106,23 +106,23 @@ Session ID: CLOUD-SID:2018-05-25_09-34-21-b180bdbc-745a-47eb-95e7-d2679a52fdd5
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at mavenTest.seleniumTest.test(seleniumTest.java:93)
+	at mavenTest.seleniumTest.test(seleniumTest.java:80)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1804048371", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1804048371'><pre>org.openqa.selenium.NoSuchElementException: no such element (An element could not be located on the page using the given search parameters (XPATH=&apos;//*[@href=&quot;https://en.wikipedia.org/wiki/Jerusalem&quot;]&apos;))  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.77 seconds
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1637622909", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1637622909'><pre>org.openqa.selenium.NoSuchElementException: no such element (An element could not be located on the page using the given search parameters (XPATH=&apos;//*[@name=&apos;q&apos;]&apos;))  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.26 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
 System info: host: &apos;EYALKOPEL-LT&apos;, ip: &apos;192.168.2.125&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
 Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities [{device.majorVersion=11.0.x, dontGoHomeOnQuit=false, device.os=iOS, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={generateReport=true, takesScreenshot=true, Selenium=parallerProject, platformName=iOS, testName=ios Test}, device.serialNumber=cdaf7a8d7975b9534f335cb27e4839be7672ff39, locationServicesAuthorized=false, device.version=11.1.2, automationName=XCUITest, takesScreenshot=true, reportDirectory=reports, Selenium=parallerProject, autoWebview=false, platformName=iOS, testName=ios Test, device.screenSize=1125x2436, useKeystore=false, cloudViewLink=http://sales.experitest.com/agent-9/#/j0zbW8JO9akB4oEE?1
-Picked up Grid Node (seetest_7870)
-Reserved Device : iPhone X B0164, generateReport=true, device.manufacture=Apple, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, reportUrl=https://sales-reporter.experitest.com/#/test/8925/project/Default/, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=iPhone X, device.name=iPhone X B0164, autoGrantPermissions=false, projectName=, gridNodePort=7870, autoAcceptAlerts=false}]
-Session ID: CLOUD-SID:2018-05-25_09-34-21-b180bdbc-745a-47eb-95e7-d2679a52fdd5
-*** Element info: {Using=xpath, value=//*[@href=&quot;https://en.wikipedia.org/wiki/Jerusalem&quot;]}
+Capabilities [{device.majorVersion=10.0.x, dontGoHomeOnQuit=false, device.os=iOS, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={generateReport=true, takesScreenshot=true, Selenium=parallerProject, platformName=iOS, testName=ios Test}, device.serialNumber=569801f701a84ceedc3d0458297cea7dc353680a, locationServicesAuthorized=false, device.version=10.3.3, automationName=XCUITest, takesScreenshot=true, reportDirectory=reports, Selenium=parallerProject, autoWebview=false, platformName=iOS, testName=ios Test, device.screenSize=750x1334, useKeystore=false, cloudViewLink=http://sales.experitest.com/agent-9/#/2PcOjvjaNIPw1M4e?1
+Picked up Grid Node (seetest_7858)
+Reserved Device : iPhone 6 B0035, generateReport=true, device.manufacture=Apple, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, reportUrl=https://sales-reporter.experitest.com/#/test/9612/project/Default/, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=iPhone 6, device.name=iPhone 6 B0035, autoGrantPermissions=false, projectName=, gridNodePort=7858, autoAcceptAlerts=false}]
+Session ID: CLOUD-SID:2018-06-07_10-36-14-7474cd6e-d44f-4923-bf5f-bd9814f85e61
+*** Element info: {Using=xpath, value=//*[@name=&apos;q&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -146,7 +146,7 @@ Session ID: CLOUD-SID:2018-05-25_09-34-21-b180bdbc-745a-47eb-95e7-d2679a52fdd5
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at mavenTest.seleniumTest.test(seleniumTest.java:93)
+	at mavenTest.seleniumTest.test(seleniumTest.java:80)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -168,8 +168,8 @@ Session ID: CLOUD-SID:2018-05-25_09-34-21-b180bdbc-745a-47eb-95e7-d2679a52fdd5
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:748)
 </pre></div></td>
-<td>71</td>
-<td>mavenTest.seleniumTest@1dfe2924</td></tr>
+<td>23</td>
+<td>mavenTest.seleniumTest@57855c9a</td></tr>
 </table><p>
 </body>
 </html>

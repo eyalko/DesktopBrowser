@@ -1,99 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" total="6" passed="3">
+<testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="143534" started-at="2018-05-25T06:33:47Z" finished-at="2018-05-25T06:36:10Z">
+  <suite name="Suite" duration-ms="101626" started-at="2019-01-22T09:25:43Z" finished-at="2019-01-22T09:27:24Z">
     <groups>
+      <group name="seetest">
+        <method signature="browsers.testExperitest()[pri:0, instance:mavenTest.browsers@d8355a8]" name="testExperitest" class="mavenTest.browsers"/>
+        <method signature="browsers.testExperitest()[pri:0, instance:mavenTest.browsers@6a4f787b]" name="testExperitest" class="mavenTest.browsers"/>
+        <method signature="browsers.testExperitest()[pri:0, instance:mavenTest.browsers@4883b407]" name="testExperitest" class="mavenTest.browsers"/>
+        <method signature="browsers.testExperitest()[pri:0, instance:mavenTest.browsers@53b32d7]" name="testExperitest" class="mavenTest.browsers"/>
+        <method signature="browsers.testExperitest()[pri:0, instance:mavenTest.browsers@e25b2fe]" name="testExperitest" class="mavenTest.browsers"/>
+        <method signature="browsers.testExperitest()[pri:0, instance:mavenTest.browsers@13deb50e]" name="testExperitest" class="mavenTest.browsers"/>
+        <method signature="browsers.testExperitest()[pri:0, instance:mavenTest.browsers@14bf9759]" name="testExperitest" class="mavenTest.browsers"/>
+      </group> <!-- seetest -->
     </groups>
-    <test name="TestExplorer" duration-ms="38800" started-at="2018-05-25T06:33:47Z" finished-at="2018-05-25T06:34:26Z">
-      <class name="mavenTest.seleniumTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.seleniumTest@23e028a9]" name="setUp" is-config="true" duration-ms="2747" started-at="2018-05-25T09:33:47Z" finished-at="2018-05-25T09:33:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[internet explorer]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="test()[pri:0, instance:mavenTest.seleniumTest@23e028a9]" name="test" duration-ms="115" started-at="2018-05-25T09:33:50Z" finished-at="2018-05-25T09:33:50Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Failed to navigate to https://www.google.com. This usually means that a call to the COM method IWebBrowser2::Navigate2() failed.
-Build info: version: '3.6.0', revision: '482e46a', time: '2018-01-28T05:47:56.042Z'
-System info: host: 'SALES-DHM2', ip: '62.90.196.37', os.name: 'Windows NT (unknown)', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_121'
-Driver info: driver.version: unknown
-Command duration or timeout: 100 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'EYALKOPEL-LT', ip: '192.168.2.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{proxy={}, acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:12321/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, timeouts={implicit=0, pageLoad=300000, script=30000}, browserName=internet explorer, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss, reportUrl=https://sales-reporter.experitest.com/#/test/8920, platformName=windows, setWindowRect=true, platform=ANY}]
-Session ID: acd40701-ada3-441f-b875-a439f81bed9d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to navigate to https://www.google.com. This usually means that a call to the COM method IWebBrowser2::Navigate2() failed.
-Build info: version: '3.6.0', revision: '482e46a', time: '2018-01-28T05:47:56.042Z'
-System info: host: 'SALES-DHM2', ip: '62.90.196.37', os.name: 'Windows NT (unknown)', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_121'
-Driver info: driver.version: unknown
-Command duration or timeout: 100 milliseconds
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'EYALKOPEL-LT', ip: '192.168.2.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{proxy={}, acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:12321/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, timeouts={implicit=0, pageLoad=300000, script=30000}, browserName=internet explorer, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss, reportUrl=https://sales-reporter.experitest.com/#/test/8920, platformName=windows, setWindowRect=true, platform=ANY}]
-Session ID: acd40701-ada3-441f-b875-a439f81bed9d
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
-	at mavenTest.seleniumTest.test(seleniumTest.java:81)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.WebDriverException: Failed to navigate to https://www.google.com. This usually means that a call to the COM method IWebBrowser2::Navigate2() failed.
-Build info: version: '3.6.0', revision: '482e46a', time: '2018-01-28T05:47:56.042Z'
-System info: host: 'SALES-DHM2', ip: '62.90.196.37', os.name: 'Windows NT (unknown)', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_121'
-Driver info: driver.version: unknown
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'EYALKOPEL-LT', ip: '192.168.2.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: driver.version: unknown
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.seleniumTest@23e028a9]" name="tearDown" is-config="true" duration-ms="35881" started-at="2018-05-25T09:33:50Z" finished-at="2018-05-25T09:34:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- mavenTest.seleniumTest -->
-    </test> <!-- TestExplorer -->
-    <test name="TestChrome" duration-ms="55463" started-at="2018-05-25T06:33:47Z" finished-at="2018-05-25T06:34:42Z">
-      <class name="mavenTest.seleniumTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.seleniumTest@13a5fe33]" name="setUp" is-config="true" duration-ms="3569" started-at="2018-05-25T09:33:47Z" finished-at="2018-05-25T09:33:50Z">
+    <test name="TestChrome" duration-ms="47480" started-at="2019-01-22T09:25:43Z" finished-at="2019-01-22T09:26:30Z">
+      <class name="mavenTest.browsers">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@d8355a8]" name="setUp" is-config="true" duration-ms="4612" started-at="2019-01-22T11:25:43Z" finished-at="2019-01-22T11:25:47Z">
           <params>
             <param index="0">
               <value>
@@ -104,42 +27,19 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test()[pri:0, instance:mavenTest.seleniumTest@13a5fe33]" name="test" duration-ms="51846" started-at="2018-05-25T09:33:50Z" finished-at="2018-05-25T09:34:42Z">
+        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@d8355a8]" name="testExperitest" duration-ms="41554" started-at="2019-01-22T11:25:47Z" finished-at="2019-01-22T11:26:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.seleniumTest@13a5fe33]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-05-25T09:34:42Z" finished-at="2018-05-25T09:34:42Z">
+        </test-method> <!-- testExperitest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@d8355a8]" name="tearDown" is-config="true" duration-ms="1284" started-at="2019-01-22T11:26:29Z" finished-at="2019-01-22T11:26:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- mavenTest.seleniumTest -->
+      </class> <!-- mavenTest.browsers -->
     </test> <!-- TestChrome -->
-    <test name="TestChrome2" duration-ms="57525" started-at="2018-05-25T06:33:47Z" finished-at="2018-05-25T06:34:44Z">
-      <class name="mavenTest.seleniumTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.seleniumTest@6325a3ee]" name="setUp" is-config="true" duration-ms="5708" started-at="2018-05-25T09:33:47Z" finished-at="2018-05-25T09:33:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test()[pri:0, instance:mavenTest.seleniumTest@6325a3ee]" name="test" duration-ms="51769" started-at="2018-05-25T09:33:53Z" finished-at="2018-05-25T09:34:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.seleniumTest@6325a3ee]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-05-25T09:34:44Z" finished-at="2018-05-25T09:34:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- mavenTest.seleniumTest -->
-    </test> <!-- TestChrome2 -->
-    <test name="TestFireFox" duration-ms="58190" started-at="2018-05-25T06:33:47Z" finished-at="2018-05-25T06:34:45Z">
-      <class name="mavenTest.seleniumTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.seleniumTest@7b49cea0]" name="setUp" is-config="true" duration-ms="8804" started-at="2018-05-25T09:33:47Z" finished-at="2018-05-25T09:33:56Z">
+    <test name="TestFireFox2" duration-ms="49260" started-at="2019-01-22T09:25:43Z" finished-at="2019-01-22T09:26:32Z">
+      <class name="mavenTest.browsers">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@e25b2fe]" name="setUp" is-config="true" duration-ms="14996" started-at="2019-01-22T11:25:43Z" finished-at="2019-01-22T11:25:58Z">
           <params>
             <param index="0">
               <value>
@@ -150,207 +50,130 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test()[pri:0, instance:mavenTest.seleniumTest@7b49cea0]" name="test" duration-ms="49336" started-at="2018-05-25T09:33:56Z" finished-at="2018-05-25T09:34:45Z">
+        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@e25b2fe]" name="testExperitest" duration-ms="31236" started-at="2019-01-22T11:25:58Z" finished-at="2019-01-22T11:26:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.seleniumTest@7b49cea0]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-05-25T09:34:45Z" finished-at="2018-05-25T09:34:45Z">
+        </test-method> <!-- testExperitest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@e25b2fe]" name="tearDown" is-config="true" duration-ms="3001" started-at="2019-01-22T11:26:29Z" finished-at="2019-01-22T11:26:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- mavenTest.seleniumTest -->
+      </class> <!-- mavenTest.browsers -->
+    </test> <!-- TestFireFox2 -->
+    <test name="TestChrome3" duration-ms="64610" started-at="2019-01-22T09:25:43Z" finished-at="2019-01-22T09:26:47Z">
+      <class name="mavenTest.browsers">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@4883b407]" name="setUp" is-config="true" duration-ms="9691" started-at="2019-01-22T11:25:43Z" finished-at="2019-01-22T11:25:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@4883b407]" name="testExperitest" duration-ms="52975" started-at="2019-01-22T11:25:52Z" finished-at="2019-01-22T11:26:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExperitest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@4883b407]" name="tearDown" is-config="true" duration-ms="1920" started-at="2019-01-22T11:26:45Z" finished-at="2019-01-22T11:26:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mavenTest.browsers -->
+    </test> <!-- TestChrome3 -->
+    <test name="TestFireFox" duration-ms="65592" started-at="2019-01-22T09:25:43Z" finished-at="2019-01-22T09:26:48Z">
+      <class name="mavenTest.browsers">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@53b32d7]" name="setUp" is-config="true" duration-ms="31099" started-at="2019-01-22T11:25:43Z" finished-at="2019-01-22T11:26:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@53b32d7]" name="testExperitest" duration-ms="32161" started-at="2019-01-22T11:26:14Z" finished-at="2019-01-22T11:26:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExperitest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@53b32d7]" name="tearDown" is-config="true" duration-ms="2300" started-at="2019-01-22T11:26:46Z" finished-at="2019-01-22T11:26:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mavenTest.browsers -->
     </test> <!-- TestFireFox -->
-    <test name="TestAndroid" duration-ms="94231" started-at="2018-05-25T06:33:47Z" finished-at="2018-05-25T06:35:21Z">
-      <class name="mavenTest.seleniumTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.seleniumTest@627551fb]" name="setUp" is-config="true" duration-ms="18623" started-at="2018-05-25T09:33:47Z" finished-at="2018-05-25T09:34:05Z">
+    <test name="TestChrome2" duration-ms="68185" started-at="2019-01-22T09:25:43Z" finished-at="2019-01-22T09:26:51Z">
+      <class name="mavenTest.browsers">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@6a4f787b]" name="setUp" is-config="true" duration-ms="23554" started-at="2019-01-22T11:25:43Z" finished-at="2019-01-22T11:26:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[android]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="test()[pri:0, instance:mavenTest.seleniumTest@627551fb]" name="test" duration-ms="67039" started-at="2018-05-25T09:34:05Z" finished-at="2018-05-25T09:35:13Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element (An element could not be located on the page using the given search parameters (XPATH='//*[@href="https://en.wikipedia.org/wiki/Jerusalem"]'))  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 4.66 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'EYALKOPEL-LT', ip: '192.168.2.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{device.majorVersion=5.0.x, dontGoHomeOnQuit=false, device.os=Android, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={generateReport=true, takesScreenshot=true, Selenium=parallerProject, platformName=Android, testName=android Test}, device.serialNumber=N2K7N16811000808, locationServicesAuthorized=false, device.version=5.0.1, takesScreenshot=true, reportDirectory=reports, Selenium=parallerProject, autoWebview=false, platformName=Android, testName=android Test, device.screenSize=720x1280, useKeystore=false, cloudViewLink=http://sales.experitest.com/agent-11/#/sqfNW86xdxbOSdP4?1
-Picked up Grid Node (seetest_7798)
-Reserved Device : Huawei ALE-L02 A0125, generateReport=true, device.manufacture=HUAWEI, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, reportUrl=https://sales-reporter.experitest.com/#/test/8924/project/Default/, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=ALE-L02, device.name=Huawei ALE-L02 A0125, autoGrantPermissions=false, projectName=, gridNodePort=7798, autoAcceptAlerts=false}]
-Session ID: CLOUD-SID:2018-05-25_09-33-43-07059fa5-5b3d-46f8-b0ae-e36cb69623cb
-*** Element info: {Using=xpath, value=//*[@href="https://en.wikipedia.org/wiki/Jerusalem"]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element (An element could not be located on the page using the given search parameters (XPATH='//*[@href="https://en.wikipedia.org/wiki/Jerusalem"]'))  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 4.66 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'EYALKOPEL-LT', ip: '192.168.2.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{device.majorVersion=5.0.x, dontGoHomeOnQuit=false, device.os=Android, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={generateReport=true, takesScreenshot=true, Selenium=parallerProject, platformName=Android, testName=android Test}, device.serialNumber=N2K7N16811000808, locationServicesAuthorized=false, device.version=5.0.1, takesScreenshot=true, reportDirectory=reports, Selenium=parallerProject, autoWebview=false, platformName=Android, testName=android Test, device.screenSize=720x1280, useKeystore=false, cloudViewLink=http://sales.experitest.com/agent-11/#/sqfNW86xdxbOSdP4?1
-Picked up Grid Node (seetest_7798)
-Reserved Device : Huawei ALE-L02 A0125, generateReport=true, device.manufacture=HUAWEI, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, reportUrl=https://sales-reporter.experitest.com/#/test/8924/project/Default/, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=ALE-L02, device.name=Huawei ALE-L02 A0125, autoGrantPermissions=false, projectName=, gridNodePort=7798, autoAcceptAlerts=false}]
-Session ID: CLOUD-SID:2018-05-25_09-33-43-07059fa5-5b3d-46f8-b0ae-e36cb69623cb
-*** Element info: {Using=xpath, value=//*[@href="https://en.wikipedia.org/wiki/Jerusalem"]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at mavenTest.seleniumTest.test(seleniumTest.java:93)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@6a4f787b]" name="testExperitest" duration-ms="44068" started-at="2019-01-22T11:26:06Z" finished-at="2019-01-22T11:26:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.seleniumTest@627551fb]" name="tearDown" is-config="true" duration-ms="8519" started-at="2018-05-25T09:35:13Z" finished-at="2018-05-25T09:35:21Z">
+        </test-method> <!-- testExperitest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@6a4f787b]" name="tearDown" is-config="true" duration-ms="526" started-at="2019-01-22T11:26:50Z" finished-at="2019-01-22T11:26:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- mavenTest.seleniumTest -->
-    </test> <!-- TestAndroid -->
-    <test name="TestIOS" duration-ms="104618" started-at="2018-05-25T06:34:26Z" finished-at="2018-05-25T06:36:10Z">
-      <class name="mavenTest.seleniumTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.seleniumTest@1dfe2924]" name="setUp" is-config="true" duration-ms="29930" started-at="2018-05-25T09:34:26Z" finished-at="2018-05-25T09:34:56Z">
+      </class> <!-- mavenTest.browsers -->
+    </test> <!-- TestChrome2 -->
+    <test name="TestSafari" duration-ms="44964" started-at="2019-01-22T09:26:32Z" finished-at="2019-01-22T09:27:17Z">
+      <class name="mavenTest.browsers">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@14bf9759]" name="setUp" is-config="true" duration-ms="19927" started-at="2019-01-22T11:26:32Z" finished-at="2019-01-22T11:26:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ios]]>
+                <![CDATA[safari]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="test()[pri:0, instance:mavenTest.seleniumTest@1dfe2924]" name="test" duration-ms="71002" started-at="2018-05-25T09:34:56Z" finished-at="2018-05-25T09:36:07Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element (An element could not be located on the page using the given search parameters (XPATH='//*[@href="https://en.wikipedia.org/wiki/Jerusalem"]'))  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.77 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'EYALKOPEL-LT', ip: '192.168.2.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities [{device.majorVersion=11.0.x, dontGoHomeOnQuit=false, device.os=iOS, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={generateReport=true, takesScreenshot=true, Selenium=parallerProject, platformName=iOS, testName=ios Test}, device.serialNumber=cdaf7a8d7975b9534f335cb27e4839be7672ff39, locationServicesAuthorized=false, device.version=11.1.2, automationName=XCUITest, takesScreenshot=true, reportDirectory=reports, Selenium=parallerProject, autoWebview=false, platformName=iOS, testName=ios Test, device.screenSize=1125x2436, useKeystore=false, cloudViewLink=http://sales.experitest.com/agent-9/#/j0zbW8JO9akB4oEE?1
-Picked up Grid Node (seetest_7870)
-Reserved Device : iPhone X B0164, generateReport=true, device.manufacture=Apple, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, reportUrl=https://sales-reporter.experitest.com/#/test/8925/project/Default/, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=iPhone X, device.name=iPhone X B0164, autoGrantPermissions=false, projectName=, gridNodePort=7870, autoAcceptAlerts=false}]
-Session ID: CLOUD-SID:2018-05-25_09-34-21-b180bdbc-745a-47eb-95e7-d2679a52fdd5
-*** Element info: {Using=xpath, value=//*[@href="https://en.wikipedia.org/wiki/Jerusalem"]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element (An element could not be located on the page using the given search parameters (XPATH='//*[@href="https://en.wikipedia.org/wiki/Jerusalem"]'))  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.77 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
-System info: host: 'EYALKOPEL-LT', ip: '192.168.2.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities [{device.majorVersion=11.0.x, dontGoHomeOnQuit=false, device.os=iOS, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, fullReset=false, platform=ANY, desired={generateReport=true, takesScreenshot=true, Selenium=parallerProject, platformName=iOS, testName=ios Test}, device.serialNumber=cdaf7a8d7975b9534f335cb27e4839be7672ff39, locationServicesAuthorized=false, device.version=11.1.2, automationName=XCUITest, takesScreenshot=true, reportDirectory=reports, Selenium=parallerProject, autoWebview=false, platformName=iOS, testName=ios Test, device.screenSize=1125x2436, useKeystore=false, cloudViewLink=http://sales.experitest.com/agent-9/#/j0zbW8JO9akB4oEE?1
-Picked up Grid Node (seetest_7870)
-Reserved Device : iPhone X B0164, generateReport=true, device.manufacture=Apple, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, reportUrl=https://sales-reporter.experitest.com/#/test/8925/project/Default/, keystorePath=~/.android/debug.keystore, waitForDeviceTimeout=120000, device.model=iPhone X, device.name=iPhone X B0164, autoGrantPermissions=false, projectName=, gridNodePort=7870, autoAcceptAlerts=false}]
-Session ID: CLOUD-SID:2018-05-25_09-34-21-b180bdbc-745a-47eb-95e7-d2679a52fdd5
-*** Element info: {Using=xpath, value=//*[@href="https://en.wikipedia.org/wiki/Jerusalem"]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at mavenTest.seleniumTest.test(seleniumTest.java:93)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@14bf9759]" name="testExperitest" duration-ms="24969" started-at="2019-01-22T11:26:52Z" finished-at="2019-01-22T11:27:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.seleniumTest@1dfe2924]" name="tearDown" is-config="true" duration-ms="3681" started-at="2018-05-25T09:36:07Z" finished-at="2018-05-25T09:36:10Z">
+        </test-method> <!-- testExperitest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@14bf9759]" name="tearDown" is-config="true" duration-ms="66" started-at="2019-01-22T11:27:17Z" finished-at="2019-01-22T11:27:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- mavenTest.seleniumTest -->
-    </test> <!-- TestIOS -->
+      </class> <!-- mavenTest.browsers -->
+    </test> <!-- TestSafari -->
+    <test name="TestFireFox3" duration-ms="54119" started-at="2019-01-22T09:26:30Z" finished-at="2019-01-22T09:27:24Z">
+      <class name="mavenTest.browsers">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@13deb50e]" name="setUp" is-config="true" duration-ms="24807" started-at="2019-01-22T11:26:30Z" finished-at="2019-01-22T11:26:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@13deb50e]" name="testExperitest" duration-ms="28015" started-at="2019-01-22T11:26:55Z" finished-at="2019-01-22T11:27:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExperitest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@13deb50e]" name="tearDown" is-config="true" duration-ms="1293" started-at="2019-01-22T11:27:23Z" finished-at="2019-01-22T11:27:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mavenTest.browsers -->
+    </test> <!-- TestFireFox3 -->
   </suite> <!-- Suite -->
 </testng-results>

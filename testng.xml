@@ -4,28 +4,58 @@
   <test name="TestChrome">
   	<parameter name="browser" value="chrome"/>
     <classes>
-      <class name="mavenTest.seleniumTest"/>
+      <class name="mavenTest.browsers"/>
     </classes>
-  </test> <!-- Test -->
-    <test name="TestChrome2">
+  </test> 
+  <test name="TestChrome2">
   	<parameter name="browser" value="chrome"/>
     <classes>
-      <class name="mavenTest.seleniumTest"/>
+      <class name="mavenTest.browsers"/>
     </classes>
-  </test> <!-- Test -->
+  </test> 
+    <test name="TestChrome3">
+  	<parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="mavenTest.browsers"/>
+    </classes>
+  </test> 
   <test name="TestFireFox">
   	<parameter name="browser" value="firefox"/>
     <classes>
-      <class name="mavenTest.seleniumTest"/>
+      <class name="mavenTest.browsers"/>
     </classes>
-  </test> <!-- Test -->
-  <test name="TestExplorer">
+  </test> 
+    <test name="TestFireFox2">
+  	<parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="mavenTest.browsers"/>
+    </classes>
+  </test>
+      <test name="TestFireFox3">
+  	<parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="mavenTest.browsers"/>
+    </classes>
+  </test>
+  <test name="TestSafari">
+  	<parameter name="browser" value="safari"/>
+    <classes>
+      <class name="mavenTest.browsers"/>
+    </classes>
+   </test>
+<!--     <test name="TestExplorer2">
   	<parameter name="browser" value="internet explorer"/>
     <classes>
       <class name="mavenTest.seleniumTest"/>
     </classes>
-   </test>
-<!--    <test name="TestAndroid">
+   </test> -->
+ <!-- <test name="TestAndroid">
+  	<parameter name="browser" value="android"/>
+    <classes>
+      <class name="mavenTest.seleniumTest"/>
+    </classes>
+   </test> 
+    <test name="TestAndroid2">
   	<parameter name="browser" value="android"/>
     <classes>
       <class name="mavenTest.seleniumTest"/>
@@ -36,5 +66,5 @@
     <classes>
       <class name="mavenTest.seleniumTest"/>
     </classes>
-  </test> -->
+  </test>  -->
 </suite> <!-- Suite -->
