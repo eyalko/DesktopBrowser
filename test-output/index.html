@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">7 tests</span>
+                    <span class="test-stats">12 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,40 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">12 methods, 1 failed,  2 skipped,  9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mavenTest.browsers" hash-for-method="testExperitest">testExperitest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mavenTest.browsers" hash-for-method="testExperitest">testExperitest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mavenTest.browsers" hash-for-method="testExperitest">testExperitest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -99,6 +132,16 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mavenTest.browsers" hash-for-method="testExperitest">testExperitest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mavenTest.browsers" hash-for-method="testExperitest">testExperitest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mavenTest.browsers" hash-for-method="testExperitest">testExperitest</a> <!-- method navigator-link -->
@@ -146,12 +189,99 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">mavenTest.browsers</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testExperitest">
+                  </a> <!-- testExperitest -->
+                  <span class="method-name">testExperitest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.name: q (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at mavenTest.browsers.testExperitest(browsers.java:44)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;q&quot;}
+  (Session info: chrome=71.0.3578.0)
+  (Driver info: chromedriver=2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;EYALKOPEL-LT&apos;, ip: &apos;192.168.2.125&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/yk/mdlr7xzj1s5...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59009}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), reportUrl: https://sales.experitest.co..., rotatable: false, sessionId: 44b375d50664619e3f0effc6da3..., setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.0, webStorageEnabled: true}
+Session ID: 44b375d50664619e3f0effc6da3cca24
+*** Element info: {Using=name, value=q}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 21 more
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">mavenTest.browsers</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testExperitest">
+                  </a> <!-- testExperitest -->
+                  <span class="method-name">testExperitest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testExperitest">
+                  </a> <!-- testExperitest -->
+                  <span class="method-name">testExperitest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">mavenTest.browsers</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testExperitest">
+                  </a> <!-- testExperitest -->
+                  <span class="method-name">testExperitest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testExperitest">
+                  </a> <!-- testExperitest -->
+                  <span class="method-name">testExperitest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="testExperitest">
@@ -212,7 +342,7 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
+&lt;suite thread-count=&quot;10&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
   &lt;test name=&quot;TestChrome&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
@@ -231,6 +361,12 @@
       &lt;class name=&quot;mavenTest.browsers&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestChrome3 --&gt;
+  &lt;test name=&quot;TestChrome4&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;mavenTest.browsers&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestChrome4 --&gt;
   &lt;test name=&quot;TestFireFox&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
@@ -249,12 +385,36 @@
       &lt;class name=&quot;mavenTest.browsers&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestFireFox3 --&gt;
+  &lt;test name=&quot;TestFireFox4&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;mavenTest.browsers&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestFireFox4 --&gt;
   &lt;test name=&quot;TestSafari&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;safari&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;mavenTest.browsers&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestSafari --&gt;
+  &lt;test name=&quot;TestSafari2&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;safari&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;mavenTest.browsers&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestSafari2 --&gt;
+  &lt;test name=&quot;TestSafari3&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;safari&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;mavenTest.browsers&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestSafari3 --&gt;
+  &lt;test name=&quot;TestSafari4&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;safari&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;mavenTest.browsers&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestSafari4 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -275,6 +435,9 @@
                 <span class="test-name">TestChrome3 (1 class)</span>
               </li>
               <li>
+                <span class="test-name">TestChrome4 (1 class)</span>
+              </li>
+              <li>
                 <span class="test-name">TestFireFox (1 class)</span>
               </li>
               <li>
@@ -284,7 +447,19 @@
                 <span class="test-name">TestFireFox3 (1 class)</span>
               </li>
               <li>
+                <span class="test-name">TestFireFox4 (1 class)</span>
+              </li>
+              <li>
                 <span class="test-name">TestSafari (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TestSafari2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TestSafari3 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TestSafari4 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -318,40 +493,60 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(12);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testExperitest')
 data.setCell(0, 2, 'mavenTest.browsers')
-data.setCell(0, 3, 52975);
+data.setCell(0, 3, 345006);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testExperitest')
 data.setCell(1, 2, 'mavenTest.browsers')
-data.setCell(1, 3, 44068);
+data.setCell(1, 3, 238961);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testExperitest')
 data.setCell(2, 2, 'mavenTest.browsers')
-data.setCell(2, 3, 41554);
+data.setCell(2, 3, 194245);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testExperitest')
 data.setCell(3, 2, 'mavenTest.browsers')
-data.setCell(3, 3, 32161);
+data.setCell(3, 3, 167125);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'testExperitest')
 data.setCell(4, 2, 'mavenTest.browsers')
-data.setCell(4, 3, 31236);
+data.setCell(4, 3, 161084);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'testExperitest')
 data.setCell(5, 2, 'mavenTest.browsers')
-data.setCell(5, 3, 28015);
+data.setCell(5, 3, 159806);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'testExperitest')
 data.setCell(6, 2, 'mavenTest.browsers')
-data.setCell(6, 3, 24969);
+data.setCell(6, 3, 126345);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testExperitest')
+data.setCell(7, 2, 'mavenTest.browsers')
+data.setCell(7, 3, 122107);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testExperitest')
+data.setCell(8, 2, 'mavenTest.browsers')
+data.setCell(8, 3, 114903);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testExperitest')
+data.setCell(9, 2, 'mavenTest.browsers')
+data.setCell(9, 3, 68036);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testExperitest')
+data.setCell(10, 2, 'mavenTest.browsers')
+data.setCell(10, 3, 1);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testExperitest')
+data.setCell(11, 2, 'mavenTest.browsers')
+data.setCell(11, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 28 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -379,88 +574,146 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">mavenTest.browsers</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(chrome)</span>
+                <span class="method-name">setUp(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">3 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp(firefox)</span>
-                <span class="method-start">3 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(firefox)</span>
-                <span class="method-start">8 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">13 ms</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testExperitest</span>
-                <span class="method-start">4615 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testExperitest</span>
-                <span class="method-start">9691 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testExperitest</span>
-                <span class="method-start">14999 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testExperitest</span>
-                <span class="method-start">23567 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testExperitest</span>
-                <span class="method-start">31107 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">46171 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">46236 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(firefox)</span>
-                <span class="method-start">47487 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(safari)</span>
+                <span class="method-start">3 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(safari)</span>
-                <span class="method-start">49249 ms</span>
+                <span class="method-start">4 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(firefox)</span>
+                <span class="method-start">7 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">7 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">8 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testExperitest</span>
+                <span class="method-start">7242 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testExperitest</span>
+                <span class="method-start">13330 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testExperitest</span>
+                <span class="method-start">23060 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testExperitest</span>
+                <span class="method-start">23131 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testExperitest</span>
+                <span class="method-start">42466 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testExperitest</span>
+                <span class="method-start">87477 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testExperitest</span>
+                <span class="method-start">140910 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">149479 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(safari)</span>
+                <span class="method-start">151206 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testExperitest</span>
+                <span class="method-start">166421 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">168327 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(safari)</span>
+                <span class="method-start">172250 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">62667 ms</span>
+                <span class="method-start">190186 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">63269 ms</span>
+                <span class="method-start">208950 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">67637 ms</span>
+                <span class="method-start">236714 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testExperitest</span>
-                <span class="method-start">69176 ms</span>
+                <span class="method-start">301945 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testExperitest</span>
-                <span class="method-start">72294 ms</span>
+                <span class="method-start">302043 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">94146 ms</span>
+                <span class="method-start">326228 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">100310 ms</span>
+                <span class="method-start">326439 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">358337 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testExperitest</span>
+                <span class="method-start">365549 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">424151 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testExperitest</span>
+                <span class="method-start">453584 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">568488 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="7" passed="7">
+<testng-results skipped="2" failed="1" total="12" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="101626" started-at="2019-01-22T09:25:43Z" finished-at="2019-01-22T09:27:24Z">
+  <suite name="Suite" duration-ms="568624" started-at="2019-01-23T08:24:33Z" finished-at="2019-01-23T08:34:01Z">
     <groups>
       <group name="seetest">
         <method signature="browsers.testExperitest()[pri:0, instance:mavenTest.browsers@d8355a8]" name="testExperitest" class="mavenTest.browsers"/>
@@ -12,34 +12,16 @@
         <method signature="browsers.testExperitest()[pri:0, instance:mavenTest.browsers@e25b2fe]" name="testExperitest" class="mavenTest.browsers"/>
         <method signature="browsers.testExperitest()[pri:0, instance:mavenTest.browsers@13deb50e]" name="testExperitest" class="mavenTest.browsers"/>
         <method signature="browsers.testExperitest()[pri:0, instance:mavenTest.browsers@14bf9759]" name="testExperitest" class="mavenTest.browsers"/>
+        <method signature="browsers.testExperitest()[pri:0, instance:mavenTest.browsers@6500df86]" name="testExperitest" class="mavenTest.browsers"/>
+        <method signature="browsers.testExperitest()[pri:0, instance:mavenTest.browsers@7085bdee]" name="testExperitest" class="mavenTest.browsers"/>
+        <method signature="browsers.testExperitest()[pri:0, instance:mavenTest.browsers@31a5c39e]" name="testExperitest" class="mavenTest.browsers"/>
+        <method signature="browsers.testExperitest()[pri:0, instance:mavenTest.browsers@6e06451e]" name="testExperitest" class="mavenTest.browsers"/>
+        <method signature="browsers.testExperitest()[pri:0, instance:mavenTest.browsers@4566e5bd]" name="testExperitest" class="mavenTest.browsers"/>
       </group> <!-- seetest -->
     </groups>
-    <test name="TestChrome" duration-ms="47480" started-at="2019-01-22T09:25:43Z" finished-at="2019-01-22T09:26:30Z">
+    <test name="TestFireFox2" duration-ms="151165" started-at="2019-01-23T08:24:33Z" finished-at="2019-01-23T08:27:04Z">
       <class name="mavenTest.browsers">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@d8355a8]" name="setUp" is-config="true" duration-ms="4612" started-at="2019-01-22T11:25:43Z" finished-at="2019-01-22T11:25:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@d8355a8]" name="testExperitest" duration-ms="41554" started-at="2019-01-22T11:25:47Z" finished-at="2019-01-22T11:26:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testExperitest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@d8355a8]" name="tearDown" is-config="true" duration-ms="1284" started-at="2019-01-22T11:26:29Z" finished-at="2019-01-22T11:26:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- mavenTest.browsers -->
-    </test> <!-- TestChrome -->
-    <test name="TestFireFox2" duration-ms="49260" started-at="2019-01-22T09:25:43Z" finished-at="2019-01-22T09:26:32Z">
-      <class name="mavenTest.browsers">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@e25b2fe]" name="setUp" is-config="true" duration-ms="14996" started-at="2019-01-22T11:25:43Z" finished-at="2019-01-22T11:25:58Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@13deb50e]" name="setUp" is-config="true" duration-ms="23131" started-at="2019-01-23T10:24:33Z" finished-at="2019-01-23T10:24:56Z">
           <params>
             <param index="0">
               <value>
@@ -50,19 +32,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@e25b2fe]" name="testExperitest" duration-ms="31236" started-at="2019-01-22T11:25:58Z" finished-at="2019-01-22T11:26:29Z">
+        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@13deb50e]" name="testExperitest" duration-ms="126345" started-at="2019-01-23T10:24:56Z" finished-at="2019-01-23T10:27:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testExperitest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@e25b2fe]" name="tearDown" is-config="true" duration-ms="3001" started-at="2019-01-22T11:26:29Z" finished-at="2019-01-22T11:26:32Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@13deb50e]" name="tearDown" is-config="true" duration-ms="1656" started-at="2019-01-23T10:27:02Z" finished-at="2019-01-23T10:27:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- mavenTest.browsers -->
     </test> <!-- TestFireFox2 -->
-    <test name="TestChrome3" duration-ms="64610" started-at="2019-01-22T09:25:43Z" finished-at="2019-01-22T09:26:47Z">
+    <test name="TestChrome3" duration-ms="172218" started-at="2019-01-23T08:24:33Z" finished-at="2019-01-23T08:27:25Z">
       <class name="mavenTest.browsers">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@4883b407]" name="setUp" is-config="true" duration-ms="9691" started-at="2019-01-22T11:25:43Z" finished-at="2019-01-22T11:25:52Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@4883b407]" name="setUp" is-config="true" duration-ms="7235" started-at="2019-01-23T10:24:33Z" finished-at="2019-01-23T10:24:40Z">
           <params>
             <param index="0">
               <value>
@@ -73,19 +55,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@4883b407]" name="testExperitest" duration-ms="52975" started-at="2019-01-22T11:25:52Z" finished-at="2019-01-22T11:26:45Z">
+        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@4883b407]" name="testExperitest" duration-ms="161084" started-at="2019-01-23T10:24:40Z" finished-at="2019-01-23T10:27:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testExperitest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@4883b407]" name="tearDown" is-config="true" duration-ms="1920" started-at="2019-01-22T11:26:45Z" finished-at="2019-01-22T11:26:47Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@4883b407]" name="tearDown" is-config="true" duration-ms="3862" started-at="2019-01-23T10:27:21Z" finished-at="2019-01-23T10:27:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- mavenTest.browsers -->
     </test> <!-- TestChrome3 -->
-    <test name="TestFireFox" duration-ms="65592" started-at="2019-01-22T09:25:43Z" finished-at="2019-01-22T09:26:48Z">
+    <test name="TestFireFox3" duration-ms="195464" started-at="2019-01-23T08:24:33Z" finished-at="2019-01-23T08:27:48Z">
       <class name="mavenTest.browsers">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@53b32d7]" name="setUp" is-config="true" duration-ms="31099" started-at="2019-01-22T11:25:43Z" finished-at="2019-01-22T11:26:14Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@14bf9759]" name="setUp" is-config="true" duration-ms="23053" started-at="2019-01-23T10:24:33Z" finished-at="2019-01-23T10:24:56Z">
           <params>
             <param index="0">
               <value>
@@ -96,19 +78,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@53b32d7]" name="testExperitest" duration-ms="32161" started-at="2019-01-22T11:26:14Z" finished-at="2019-01-22T11:26:46Z">
+        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@14bf9759]" name="testExperitest" duration-ms="167125" started-at="2019-01-23T10:24:56Z" finished-at="2019-01-23T10:27:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testExperitest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@53b32d7]" name="tearDown" is-config="true" duration-ms="2300" started-at="2019-01-22T11:26:46Z" finished-at="2019-01-22T11:26:48Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@14bf9759]" name="tearDown" is-config="true" duration-ms="5249" started-at="2019-01-23T10:27:43Z" finished-at="2019-01-23T10:27:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- mavenTest.browsers -->
-    </test> <!-- TestFireFox -->
-    <test name="TestChrome2" duration-ms="68185" started-at="2019-01-22T09:25:43Z" finished-at="2019-01-22T09:26:51Z">
+    </test> <!-- TestFireFox3 -->
+    <test name="TestChrome4" duration-ms="209345" started-at="2019-01-23T08:24:33Z" finished-at="2019-01-23T08:28:02Z">
       <class name="mavenTest.browsers">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@6a4f787b]" name="setUp" is-config="true" duration-ms="23554" started-at="2019-01-22T11:25:43Z" finished-at="2019-01-22T11:26:06Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@53b32d7]" name="setUp" is-config="true" duration-ms="140910" started-at="2019-01-23T10:24:33Z" finished-at="2019-01-23T10:26:54Z">
           <params>
             <param index="0">
               <value>
@@ -119,19 +101,81 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@6a4f787b]" name="testExperitest" duration-ms="44068" started-at="2019-01-22T11:26:06Z" finished-at="2019-01-22T11:26:50Z">
+        <test-method status="FAIL" signature="testExperitest()[pri:0, instance:mavenTest.browsers@53b32d7]" name="testExperitest" duration-ms="68036" started-at="2019-01-23T10:26:54Z" finished-at="2019-01-23T10:28:02Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.name: q (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.name: q (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at mavenTest.browsers.testExperitest(browsers.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"q"}
+  (Session info: chrome=71.0.3578.0)
+  (Driver info: chromedriver=2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EYALKOPEL-LT', ip: '192.168.2.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/yk/mdlr7xzj1s5...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59009}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), reportUrl: https://sales.experitest.co..., rotatable: false, sessionId: 44b375d50664619e3f0effc6da3..., setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.0, webStorageEnabled: true}
+Session ID: 44b375d50664619e3f0effc6da3cca24
+*** Element info: {Using=name, value=q}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 21 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testExperitest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@6a4f787b]" name="tearDown" is-config="true" duration-ms="526" started-at="2019-01-22T11:26:50Z" finished-at="2019-01-22T11:26:51Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@53b32d7]" name="tearDown" is-config="true" duration-ms="366" started-at="2019-01-23T10:28:02Z" finished-at="2019-01-23T10:28:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- mavenTest.browsers -->
-    </test> <!-- TestChrome2 -->
-    <test name="TestSafari" duration-ms="44964" started-at="2019-01-22T09:26:32Z" finished-at="2019-01-22T09:27:17Z">
+    </test> <!-- TestChrome4 -->
+    <test name="TestSafari" duration-ms="237192" started-at="2019-01-23T08:24:33Z" finished-at="2019-01-23T08:28:30Z">
       <class name="mavenTest.browsers">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@14bf9759]" name="setUp" is-config="true" duration-ms="19927" started-at="2019-01-22T11:26:32Z" finished-at="2019-01-22T11:26:52Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@7085bdee]" name="setUp" is-config="true" duration-ms="42462" started-at="2019-01-23T10:24:33Z" finished-at="2019-01-23T10:25:15Z">
           <params>
             <param index="0">
               <value>
@@ -142,19 +186,116 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@14bf9759]" name="testExperitest" duration-ms="24969" started-at="2019-01-22T11:26:52Z" finished-at="2019-01-22T11:27:17Z">
+        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@7085bdee]" name="testExperitest" duration-ms="194245" started-at="2019-01-23T10:25:15Z" finished-at="2019-01-23T10:28:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testExperitest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@14bf9759]" name="tearDown" is-config="true" duration-ms="66" started-at="2019-01-22T11:27:17Z" finished-at="2019-01-22T11:27:17Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@7085bdee]" name="tearDown" is-config="true" duration-ms="450" started-at="2019-01-23T10:28:29Z" finished-at="2019-01-23T10:28:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- mavenTest.browsers -->
     </test> <!-- TestSafari -->
-    <test name="TestFireFox3" duration-ms="54119" started-at="2019-01-22T09:26:30Z" finished-at="2019-01-22T09:27:24Z">
+    <test name="TestSafari2" duration-ms="301977" started-at="2019-01-23T08:24:33Z" finished-at="2019-01-23T08:29:35Z">
       <class name="mavenTest.browsers">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@13deb50e]" name="setUp" is-config="true" duration-ms="24807" started-at="2019-01-22T11:26:30Z" finished-at="2019-01-22T11:26:55Z">
+        <test-method status="FAIL" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@31a5c39e]" name="setUp" is-config="true" duration-ms="0" started-at="2019-01-23T10:24:33Z" finished-at="2019-01-23T10:24:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[safari]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Unable to parse remote response: Could not start selenium grid test. Test request timed out. No browser found matching the desired capabilities {browserName=safari, testName=safari selenium test}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Unable to parse remote response: Could not start selenium grid test. Test request timed out. No browser found matching the desired capabilities {browserName=safari, testName=safari selenium test}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at mavenTest.browsers.setUp(browsers.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: C. Last 1 characters read: C
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EYALKOPEL-LT', ip: '192.168.2.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+	at org.openqa.selenium.json.Json.toType(Json.java:69)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+	... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="testExperitest()[pri:0, instance:mavenTest.browsers@31a5c39e]" name="testExperitest" duration-ms="1" started-at="2019-01-23T10:29:35Z" finished-at="2019-01-23T10:29:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExperitest -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:mavenTest.browsers@31a5c39e]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-01-23T10:29:35Z" finished-at="2019-01-23T10:29:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mavenTest.browsers -->
+    </test> <!-- TestSafari2 -->
+    <test name="TestChrome" duration-ms="326910" started-at="2019-01-23T08:24:33Z" finished-at="2019-01-23T08:30:00Z">
+      <class name="mavenTest.browsers">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@d8355a8]" name="setUp" is-config="true" duration-ms="87469" started-at="2019-01-23T10:24:33Z" finished-at="2019-01-23T10:26:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@d8355a8]" name="testExperitest" duration-ms="238961" started-at="2019-01-23T10:26:00Z" finished-at="2019-01-23T10:29:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExperitest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@d8355a8]" name="tearDown" is-config="true" duration-ms="442" started-at="2019-01-23T10:29:59Z" finished-at="2019-01-23T10:30:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mavenTest.browsers -->
+    </test> <!-- TestChrome -->
+    <test name="TestFireFox4" duration-ms="358363" started-at="2019-01-23T08:24:33Z" finished-at="2019-01-23T08:30:31Z">
+      <class name="mavenTest.browsers">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@6500df86]" name="setUp" is-config="true" duration-ms="166421" started-at="2019-01-23T10:24:33Z" finished-at="2019-01-23T10:27:19Z">
           <params>
             <param index="0">
               <value>
@@ -165,15 +306,158 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@13deb50e]" name="testExperitest" duration-ms="28015" started-at="2019-01-22T11:26:55Z" finished-at="2019-01-22T11:27:23Z">
+        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@6500df86]" name="testExperitest" duration-ms="159806" started-at="2019-01-23T10:27:19Z" finished-at="2019-01-23T10:29:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testExperitest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@13deb50e]" name="tearDown" is-config="true" duration-ms="1293" started-at="2019-01-22T11:27:23Z" finished-at="2019-01-22T11:27:24Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@6500df86]" name="tearDown" is-config="true" duration-ms="32106" started-at="2019-01-23T10:29:59Z" finished-at="2019-01-23T10:30:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- mavenTest.browsers -->
-    </test> <!-- TestFireFox3 -->
+    </test> <!-- TestFireFox4 -->
+    <test name="TestChrome2" duration-ms="359209" started-at="2019-01-23T08:24:33Z" finished-at="2019-01-23T08:30:32Z">
+      <class name="mavenTest.browsers">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@6a4f787b]" name="setUp" is-config="true" duration-ms="13329" started-at="2019-01-23T10:24:33Z" finished-at="2019-01-23T10:24:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@6a4f787b]" name="testExperitest" duration-ms="345006" started-at="2019-01-23T10:24:46Z" finished-at="2019-01-23T10:30:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExperitest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@6a4f787b]" name="tearDown" is-config="true" duration-ms="843" started-at="2019-01-23T10:30:31Z" finished-at="2019-01-23T10:30:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mavenTest.browsers -->
+    </test> <!-- TestChrome2 -->
+    <test name="TestFireFox" duration-ms="365580" started-at="2019-01-23T08:24:33Z" finished-at="2019-01-23T08:30:38Z">
+      <class name="mavenTest.browsers">
+        <test-method status="FAIL" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@e25b2fe]" name="setUp" is-config="true" duration-ms="0" started-at="2019-01-23T10:24:33Z" finished-at="2019-01-23T10:24:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Unable to parse remote response: Could not start selenium grid test. Test request timed out. No browser found matching the desired capabilities {browserName=firefox, testName=firefox selenium test}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Unable to parse remote response: Could not start selenium grid test. Test request timed out. No browser found matching the desired capabilities {browserName=firefox, testName=firefox selenium test}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at mavenTest.browsers.setUp(browsers.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: C. Last 1 characters read: C
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EYALKOPEL-LT', ip: '192.168.2.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+	at org.openqa.selenium.json.Json.toType(Json.java:69)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+	... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="testExperitest()[pri:0, instance:mavenTest.browsers@e25b2fe]" name="testExperitest" duration-ms="0" started-at="2019-01-23T10:30:38Z" finished-at="2019-01-23T10:30:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExperitest -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:mavenTest.browsers@e25b2fe]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-01-23T10:30:38Z" finished-at="2019-01-23T10:30:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mavenTest.browsers -->
+    </test> <!-- TestFireFox -->
+    <test name="TestSafari4" duration-ms="252037" started-at="2019-01-23T08:27:25Z" finished-at="2019-01-23T08:31:37Z">
+      <class name="mavenTest.browsers">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@4566e5bd]" name="setUp" is-config="true" duration-ms="129793" started-at="2019-01-23T10:27:25Z" finished-at="2019-01-23T10:29:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[safari]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@4566e5bd]" name="testExperitest" duration-ms="122107" started-at="2019-01-23T10:29:35Z" finished-at="2019-01-23T10:31:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExperitest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@4566e5bd]" name="tearDown" is-config="true" duration-ms="135" started-at="2019-01-23T10:31:37Z" finished-at="2019-01-23T10:31:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mavenTest.browsers -->
+    </test> <!-- TestSafari4 -->
+    <test name="TestSafari3" duration-ms="417390" started-at="2019-01-23T08:27:04Z" finished-at="2019-01-23T08:34:01Z">
+      <class name="mavenTest.browsers">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:mavenTest.browsers@6e06451e]" name="setUp" is-config="true" duration-ms="302378" started-at="2019-01-23T10:27:04Z" finished-at="2019-01-23T10:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[safari]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testExperitest()[pri:0, instance:mavenTest.browsers@6e06451e]" name="testExperitest" duration-ms="114903" started-at="2019-01-23T10:32:06Z" finished-at="2019-01-23T10:34:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExperitest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mavenTest.browsers@6e06451e]" name="tearDown" is-config="true" duration-ms="107" started-at="2019-01-23T10:34:01Z" finished-at="2019-01-23T10:34:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mavenTest.browsers -->
+    </test> <!-- TestSafari3 -->
   </suite> <!-- Suite -->
 </testng-results>
