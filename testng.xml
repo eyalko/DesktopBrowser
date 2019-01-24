@@ -1,70 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="tests">
-  <test name="TestChrome">
-  	<parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="mavenTest.browsers"/>
-    </classes>
-  </test> 
-  <test name="TestChrome2">
-  	<parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="mavenTest.browsers"/>
-    </classes>
-  </test> 
-    <test name="TestChrome3">
-  	<parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="mavenTest.browsers"/>
-    </classes>
-  </test> 
-  <test name="TestFireFox">
-  	<parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="mavenTest.browsers"/>
-    </classes>
-  </test> 
-    <test name="TestFireFox2">
-  	<parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="mavenTest.browsers"/>
-    </classes>
-  </test>
-      <test name="TestFireFox3">
-  	<parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="mavenTest.browsers"/>
-    </classes>
-  </test>
-  <test name="TestSafari">
-  	<parameter name="browser" value="safari"/>
-    <classes>
-      <class name="mavenTest.browsers"/>
-    </classes>
-   </test>
-<!--     <test name="TestExplorer2">
-  	<parameter name="browser" value="internet explorer"/>
-    <classes>
-      <class name="mavenTest.seleniumTest"/>
-    </classes>
-   </test> -->
- <!-- <test name="TestAndroid">
-  	<parameter name="browser" value="android"/>
-    <classes>
-      <class name="mavenTest.seleniumTest"/>
-    </classes>
-   </test> 
-    <test name="TestAndroid2">
-  	<parameter name="browser" value="android"/>
-    <classes>
-      <class name="mavenTest.seleniumTest"/>
-    </classes>
-  </test> 
-    <test name="TestIOS">
-  	<parameter name="browser" value="ios"/>
-    <classes>
-      <class name="mavenTest.seleniumTest"/>
-    </classes>
-  </test>  -->
+<suite name="Suite" parallel="tests" thread-count="10">
+	<test name="TestChrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="mavenTest.browsers" />
+		</classes>
+	</test>
+	<test name="TestChrome2">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="mavenTest.browsers" />
+		</classes>
+	</test>
+	<test name="TestChrome3">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="mavenTest.browsers" />
+		</classes>
+	</test>
+	<test name="TestChrome4">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="mavenTest.browsers" />
+		</classes>
+	</test>
+	<test name="TestFireFox">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="mavenTest.browsers" />
+		</classes>
+	</test>
+	<test name="TestFireFox2">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="mavenTest.browsers" />
+		</classes>
+	</test>
+	<test name="TestFireFox3">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="mavenTest.browsers" />
+		</classes>
+	</test>
+	<test name="TestFireFox4">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="mavenTest.browsers" />
+		</classes>
+	</test>
+	<test name="TestSafari">
+		<parameter name="browser" value="safari" />
+		<classes>
+			<class name="mavenTest.browsers" />
+		</classes>
+	</test>
+	<test name="TestSafari2">
+		<parameter name="browser" value="safari" />
+		<classes>
+			<class name="mavenTest.browsers" />
+		</classes>
+	</test>
+	<test name="TestSafari3">
+		<parameter name="browser" value="safari" />
+		<classes>
+			<class name="mavenTest.browsers" />
+		</classes>
+	</test>
+	<test name="TestSafari4">
+		<parameter name="browser" value="safari" />
+		<classes>
+			<class name="mavenTest.browsers" />
+		</classes>
+	</test>
+	<!-- <test name="TestExplorer2"> <parameter name="browser" value="internet 
+		explorer"/> <classes> <class name="mavenTest.seleniumTest"/> </classes> </test> -->
+	<!-- <test name="TestAndroid"> <parameter name="browser" value="android"/> 
+		<classes> <class name="mavenTest.seleniumTest"/> </classes> </test> <test 
+		name="TestAndroid2"> <parameter name="browser" value="android"/> <classes> 
+		<class name="mavenTest.seleniumTest"/> </classes> </test> <test name="TestIOS"> 
+		<parameter name="browser" value="ios"/> <classes> <class name="mavenTest.seleniumTest"/> 
+		</classes> </test> -->
 </suite> <!-- Suite -->

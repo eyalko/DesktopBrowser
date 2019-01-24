@@ -32,21 +32,24 @@ public class browsers {
         dc.setCapability(CapabilityType.BROWSER_NAME, browser);
 //        dc.setCapability(CapabilityType.BROWSER_VERSION, "70");
         dc.setCapability("accessKey", ACCESS_KEY);
-        dc.setCapability("testName", "Selenium "+browser+" test");
+        dc.setCapability("testName", browser+" selenium test");
         driver = new RemoteWebDriver(url, dc);
     }
 
 
     @Test(groups = {"seetest"})
-    public void testExperitest() {
-        for(int i=0;i<10;i++){
+    public void testExperitest() throws InterruptedException {
+        for(int i=0;i<5;i++){
             driver.get("https://www.google.com");
             new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.name("q")));
             WebElement searchBar = driver.findElement(By.name("q"));
             searchBar.click();
             searchBar.sendKeys("Experitest");
             searchBar.sendKeys(Keys.ENTER);
-            driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+            Thread.sleep(10000);
+            driver.get("https://en.wikipedia.org/wiki/Special:Random");
+            Thread.sleep(10000);
+            
         }
     }
 
